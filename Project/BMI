@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Products</title>
+
+  <style>
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      border: 10px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .product img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .product h3 {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .product p {
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Moda Mingle Products</h1>
+
+  <div class="products">
+
+    <div class="product">
+
+      <img src="c:\Users\User\Desktop\Study\Semester5\HTML\Project\dress1.jpg">
+      <h3>Blue dress</h3>
+      <p>Elegant and timeless, this blue dress is perfect for any occasion.</p>
+      <a href="#">Add to Cart</a>
+
+    </div>
+
+    <div class="product">
+
+      <img src="c:\Users\User\Desktop\Study\Semester5\HTML\Project\jeans2.jpg">
+      <h3>Blue Jeans</h3>
+      <p>Comfortable and stylish, these blue jeans are perfect for everyday wear.</p>
+      <a href="#">Add to Cart</a>
+
+    </div>
+
+    <div class="product">
+
+      <img src="c:\Users\User\Desktop\Study\Semester5\HTML\Project\hoodie3.jpg">
+      <h3>Black hoodie</h3>
+      <p>Classic and versatile, this Black hoodie is a must-have for any wardrobe.</p>
+      <a href="#">Add to Cart</a>
+
+    </div>
+
+  </div>
+
+  <h2>BMI Calculator</h2>
+ <label for="height">Height (in cm):</label>
+ <input type="text" id="height" name="height"> <p id="invalied1" style="color: red;"></p>
+ <br>
+ <label for="weight">Weight (in kg):</label>
+ <input type="text" id="weight" name="weight"> <p id="invalied2" style="color: red;"></p>
+ <br>
+ Gender: <input type="radio" name="ff" id="gender"> Male <input type="radio" name="ff" id="gender" > Female
+ <br><br>
+ Lifestyle: <input type="checkbox" name="" id="lifestyle1"> Active  <input type="checkbox" name="" id="lifestyle2"> Sedentary
+ <br><br>
+ <button onclick="calculateBMI()">Calculate BMI</button>
+ <p id="bmiResult"></p>
+ <textarea name="" id="result" cols="30" rows="10"></textarea>
+ <script>
+    function calculateBMI() {
+      var height = document.getElementById("height").value;
+      var weight = document.getElementById("weight").value;
+      var gender = document.getElementById("gender").value;
+      var lifestyle = document.getElementById("lifestyle1").value + document.getElementById("lifestyle2").value;
+      
+      if(height === "" || weight === "") {
+        alert("Please enter your height and weight");
+        return;
+      }
+      
+      height = parseFloat(height);
+      weight = parseFloat(weight);
+
+      if (height < 0){
+        document.getElementById("invalied1").innerHTML = "Enter a valied height"
+
+      }
+      if (weight < 0){
+        document.getElementById("invalied2").innerHTML = "Enter a valied weight"
+
+      }
+      
+      var bmi = weight / (height * height) * 10000;
+      bmi = bmi.toFixed(2);
+
+      let weightCategory = "";
+    if (bmi < 18.5) {
+        weightCategory = "Underweight";
+    } else if (bmi >= 18.5 && bmi < 25) {
+        weightCategory = "Normal weight";
+    } else if (bmi >= 25 && bmi < 30) {
+        weightCategory = "Overweight";
+    } else {
+        weightCategory = "Obesity";
+    }
+
+      if (weight >= 0 && height >= 0){
+        document.getElementById("bmiResult").innerHTML = "Your BMI is: " + bmi + ", indicating that you are " + weightCategory;
+      }
+      document.getElementById("result").innerHTML = "Height: " + height + " cm \nWeight: " + weight + " kg \nGender: " + gender + "\nLifestyle: " + lifestyle + "\nbmi: " + bmi;
+    }
+ </script>
+
+</body>
+</html>

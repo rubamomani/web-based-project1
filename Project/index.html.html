@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap">
+    <link rel="stylesheet" href="bmiCalculator.html">
+    
+
+    <title>Fashion Website</title>
+
+    <script>
+        
+ function calculateBMI(){
+    var height = document.getElementById("height").value;
+    var weight = document.getElementById("weight").value;
+    var male = document.getElementById("male").checked;
+    var female = document.getElementById("female").checked;
+    var active = document.getElementById("active").checked;
+    var sedentary = document.getElementById("sedentary").checked;
+
+    
+    document.getElementById("invalid1").innerHTML = "";
+    document.getElementById("invalid2").innerHTML = "";
+    document.getElementById("genderError").innerHTML = "";
+    document.getElementById("lifestyleError").innerHTML = "";
+
+    var hasErrors = false;
+
+    if (height === "" || parseFloat(height) < 0) {
+      document.getElementById("invalid1").innerHTML = "Enter a valid height!";
+      hasErrors = true;
+    }
+
+    if (weight === "" || parseFloat(weight) < 0) {
+      document.getElementById("invalid2").innerHTML = "Enter a valid weight!";
+      hasErrors = true;
+    }
+
+    if (!male && !female) {
+      document.getElementById("genderError").innerHTML = "Select your gender!";
+      hasErrors = true;
+    }
+
+    if (!active && !sedentary) {
+      document.getElementById("lifestyleError").innerHTML = "Select at least one lifestyle option!";
+      hasErrors = true;
+    }
+
+    if (hasErrors) {
+      return;
+    }
+
+    height = parseFloat(height);
+    weight = parseFloat(weight);
+
+    var bmi = weight / (height * height) * 10000;
+    bmi = bmi.toFixed(2);
+
+    let Status = "";
+
+    if (bmi < 18.5) {
+      Status = "Underweight";
+    } else if (bmi >= 18.5 && bmi < 25) {
+      Status = "Normal weight";
+    } else if (bmi >= 25 && bmi < 30) {
+      Status = "Overweight";
+    } else {
+      Status = "Obese";
+    }
+
+    var selectedGender = male ? "Male" : "Female";
+    var selectedLifestyle = active ? "Active" : (sedentary ? "Sedentary" : "Not specified");
+
+    document.getElementById("bmiResult").innerHTML = "Your BMI is: " + bmi + ", indicating that you are " + Status;
+    document.getElementById("result").innerHTML = "Height: " + height + " cm \nWeight: " + weight + " kg \nGender: " + selectedGender + "\nLifestyle: " + selectedLifestyle + "\nBMI: " + bmi + "\nStatus: " + Status;
+  }
+ 
+
+
+        function displayCurrentDateTime() {
+            const now = new Date();
+            const date = now.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+            const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+            document.getElementById('datetime').textContent = `${date} at ${time}`;
+        }
+    </script>
+</head>
+
+<body onload="displayCurrentDateTime()">
+<header>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <button class="codepen-button"><span>Home</span></button>
+            <button class="codepen-button"><a href="AboutUs.html"><span>About Us</span></a></button>
+            <button class="codepen-button"><a href="Products.html"><span>Products</span></a></button>
+            <button class="codepen-button"><a href="ContactUs.html"><span>Contact Us</span></a></button>
+            <button class="codepen-button"><a href="Reviews.html"><span>Reviews</span></a></button>
+            <button class="codepen-button"><a href="Sitemap.html"><span>Site map</span></a></button>
+            <button class="codepen-button"><a href="bmiCalculator.html"><span>bmi Calculator</span></a></button>
+        </div>
+    </nav>
+
+
+</header>
+<div>
+    <a class="brand" href="#">
+        <img src="ModaMingle3.png" class="img">
+    </a>
+</div>
+<br>
+
+<h2 class="main-title">About Us</h2>
+<div class="centered-card card">
+    <div class="card-content">
+        <p>
+            <span>Welcome to Moda Mingle</span>, your go-to destination for chic and contemporary fashion.
+            Established in 2023, we are committed to offering a curated selection of stylish clothing and accessories that effortlessly blend modern trends with timeless elegance.
+            At Moda Mingle, we believe that fashion is a form of self-expression,
+            and our collections are designed to empower individuals to showcase their unique style with confidence.
+            Explore our carefully crafted pieces, sourced with a commitment to quality,
+            and discover fashion that resonates with your personal taste.
+            Thank you for choosing Moda Mingle as your partner in style.
+            <br />
+            <br />
+            Feel free to customize the content to better align with the specific identity and mission of your fashion brand.
+        </p>
+    </div>
+</div>
+
+
+<div class="container mission-values">
+    <h2 class="text-center">Our Mission</h2>
+    <p class="text-center">At Moda Mingle, we believe that fashion is not just about the clothes you wear; it's about expressing your unique personality and connecting with others who share your passion for style.</p>
+
+    <div class="row value-items">
+        <div class="col-md-4 value-item">
+            <i class="fas fa-globe value-icon"></i>
+            <h4>Diverse Styles, One Community</h4>
+            <p>Whether you're into high fashion, street style, or a unique blend of both, Moda Mingle is the place for you.</p>
+        </div>
+        <div class="col-md-4 value-item">
+            <i class="fas fa-lightbulb value-icon"></i>
+            <h4>Inspiration at Your Fingertips</h4>
+            <p>Browse through a curated collection of fashion inspiration, trends, and styling tips.</p>
+        </div>
+        <div class="col-md-4 value-item">
+            <i class="fas fa-users value-icon"></i>
+            <h4>Connect and Collaborate</h4>
+            <p>Engage with like-minded fashion enthusiasts, designers, and influencers.</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="box">
+            <img src="ModaMingle2.png" />
+            <ul class="social">
+                <li>
+                    <a href="https://web.facebook.com/nahla.momani" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/rubamomani" class="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ruba-almomani-633a5b257/" class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text">
+                Your well-being is not a luxury, It's a necessity. At Moda Mingle Fashion, we believe in elevating your experience to match your expectations of opulence and excellence.
+            </p>
+        </div>
+
+        <div class="box">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Jordan, Amman.</div>
+            </div>
+            <div class="line">
+                <i class="far fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 AM To 18:00 PM </div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                    <a href="tel:+9627 9047 4585"><span>07 9047 4585</a></span>
+                    <a href="tel:+9627 9789 0721"><span>07 9789 0721</a></span>
+                    <a href="tel:+9627 8641 8641"><span>07 8641 8641</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h4>Contact</h4>
+            <p>Questions? Go ahead.</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+                <button type="submit" class="w3-button w3-block w3-black">Send</button>
+            </form>
+        </div>
+    </div>
+    <p class="copyright">
+        &copy; 2023 Moda Mingle <span> Fashion </span> All Right Reserved.
+        <span id="datetime"></span>
+    </p>
+    
+</footer>
+</body>
+
+</html>

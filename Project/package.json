@@ -1,0 +1,171 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Women's Floral Dress",
+      "description": "Floral Print Surplice Neck Dress, Boho Long Sleeve Ruffle Hem Dress, Women's Clothing.",
+      "category": "Dresses",
+      "price": 49.99,
+      "image": "https://www.temu.com/kuiper/dn9.html?subj=downloadable-ads-shopping&_bg_fs=1&_p_jump_id=841&_x_vst_scene=adg&goods_id=601099522665640&sku_id=17592242740833&adg_ctx=a-7b9f0d3d~c-261ed2ab~f-687ac324&_x_ads_sub_channel=shopping&_p_rfs=1&_x_ns_prz_type=-1&_x_ns_sku_id=17592242740833&mrk_rec=1&_x_ads_channel=google&_x_gmc_account=5292427671&_x_login_type=Google&_x_ads_account=9179793958&_x_ads_set=20767891360&_x_ads_id=157149767244&_x_ads_creative_id=680317439680&_x_ns_source=g&_x_ns_gclid=Cj0KCQiA6vaqBhCbARIsACF9M6lXWGhaH9yNpM2viFWchXWF0x-MTy5naArsihTTGTELt5vsxJPYDEAaApXMEALw_wcB&_x_ns_placement=&_x_ns_match_type=&_x_ns_ad_position=&_x_ns_product_id=5292427671-en-17592242740833&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CjkKCQiAx_GqBhDsARIoAHWmxmOBBHyLcMCbvsj4FZsFvk7q3YOAU_sNyhC2R4P9TXm1MEtUCBoC7Wg&_x_ns_gbraid=0AAAAAo4mICEinn0xpdXcweNx70gTpQjVq&_x_ns_targetid=pla-293946777986&gad_source=1&gclid=Cj0KCQiA6vaqBhCbARIsACF9M6lXWGhaH9yNpM2viFWchXWF0x-MTy5naArsihTTGTELt5vsxJPYDEAaApXMEALw_wcB"
+    },
+    {
+      "id": 2,
+      "name": "Men's Classic Suit",
+      "description": "A timeless and elegant two-piece suit for men. Ideal for formal events and business meetings.",
+      "category": "Suits",
+      "price": 199.99,
+      "image": "https://example.com/images/classic_suit.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Running Shoes",
+      "description": "High-performance running shoes with advanced cushioning technology. Suitable for both casual and athletic use.",
+      "category": "Shoes",
+      "price": 79.99,
+      "image": "https://example.com/images/running_shoes.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Leather Handbag",
+      "description": "A stylish and durable leather handbag for women. Spacious interior with multiple compartments.",
+      "category": "Accessories",
+      "price": 129.99,
+      "image": "https://example.com/images/leather_handbag.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Casual Men's T-Shirt",
+      "description": "Comfortable and stylish short-sleeve t-shirt for men. Made from high-quality cotton.",
+      "category": "T-Shirts",
+      "price": 19.99,
+      "image": "https://example.com/images/casual_tshirt.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Women's High-Heel Sandals",
+      "description": "Elegant high-heel sandals for women. Perfect for evenings and special occasions.",
+      "category": "Shoes",
+      "price": 89.99,
+      "image": "https://example.com/images/highheel_sandals.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Slim Fit Jeans",
+      "description": "Classic slim-fit jeans for a modern and stylish look. Available in various sizes and colors.",
+      "category": "Jeans",
+      "price": 59.99,
+      "image": "https://example.com/images/slimfit_jeans.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Men's Leather Jacket",
+      "description": "A rugged and stylish leather jacket for men. Perfect for cool weather and casual wear.",
+      "category": "Jackets",
+      "price": 179.99,
+      "image": "https://example.com/images/leather_jacket.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Stylish Sunglasses",
+      "description": "Fashionable sunglasses with UV protection. Enhance your style and protect your eyes.",
+      "category": "Accessories",
+      "price": 39.99,
+      "image": "https://example.com/images/sunglasses.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Cozy Knit Sweater",
+      "description": "Warm and cozy knit sweater for chilly days. Available in various colors and sizes.",
+      "category": "Sweaters",
+      "price": 69.99,
+      "image": "https://example.com/images/knit_sweater.jpg"
+    },
+    {
+      "products": [
+
+
+        {
+          "id": 11,
+          "name": "Elegant Evening Gown",
+          "description": "A stunning evening gown for special occasions. Floor-length with intricate lace detailing.",
+          "category": "Dresses",
+          "price": 149.99,
+          "image": "https://example.com/images/evening_gown.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Classic Leather Belt",
+          "description": "Timeless leather belt for men. Adds a touch of sophistication to any outfit.",
+          "category": "Accessories",
+          "price": 29.99,
+          "image": "https://example.com/images/leather_belt.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Athletic Running Shorts",
+          "description": "Comfortable and breathable running shorts for active individuals. Perfect for workouts.",
+          "category": "Athletic Wear",
+          "price": 24.99,
+          "image": "https://example.com/images/running_shorts.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Chic Leather Ankle Boots",
+          "description": "Fashionable leather ankle boots for women. Versatile and stylish for various occasions.",
+          "category": "Shoes",
+          "price": 109.99,
+          "image": "https://example.com/images/ankle_boots.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Men's Casual Button-Up Shirt",
+          "description": "Casual button-up shirt for men. Comfortable and suitable for everyday wear.",
+          "category": "Shirts",
+          "price": 34.99,
+          "image": "https://example.com/images/casual_shirt.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Quilted Winter Jacket",
+          "description": "Stylish quilted winter jacket for both men and women. Keeps you warm in cold weather.",
+          "category": "Jackets",
+          "price": 129.99,
+          "image": "https://example.com/images/winter_jacket.jpg"
+        },
+        {
+          "id": 17,
+          "name": "Printed Silk Scarf",
+          "description": "Luxurious silk scarf with vibrant prints. Adds a touch of elegance to any outfit.",
+          "category": "Accessories",
+          "price": 49.99,
+          "image": "https://example.com/images/silk_scarf.jpg"
+        },
+        {
+          "id": 18,
+          "name": "Cotton Lounge Pajamas",
+          "description": "Comfortable cotton pajama set for lounging at home. Stylish and cozy for a good night's sleep.",
+          "category": "Sleepwear",
+          "price": 44.99,
+          "image": "https://example.com/images/pajama_set.jpg"
+        },
+        {
+          "id": 19,
+          "name": "Retro Round Sunglasses",
+          "description": "Vintage-inspired round sunglasses. Adds a retro flair to your look.",
+          "category": "Accessories",
+          "price": 36.99,
+          "image": "https://example.com/images/retro_sunglasses.jpg"
+        },
+        {
+          "id": 20,
+          "name": "Denim Jacket with Patches",
+          "description": "Trendy denim jacket adorned with stylish patches. A statement piece for casual wear.",
+          "category": "Jackets",
+          "price": 89.99,
+          "image": "https://example.com/images/denim_jacket.jpg"
+        }
+  ]
+}
+
+  ]
+}
